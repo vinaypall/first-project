@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+/* ------------------------------------------ styling of navigation bar ------------------ */
+header{
+    height: 90px;
+    width: 100%;
+    background: #fede00;
+    box-shadow: 5px 1px 10px 0px black;
+    margin: 0;
+    top: 0;
+    z-index: 602;
+    position: fixed;
+    
+
+
+}
+#logo{
+    line-height: 80px;
+	position: absolute;    float: left;
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-weight: 200;
+}
+.topics{
+    justify-content: center;
+	box-shadow: -10px 0 0 0 black;
+    height: 90px;
+}
+nav{
+    float: right;
+}
+nav ul{
+    list-style: none;
+	  float: right;
+    margin-right: 100px;
+    
+}
+nav ul li{
+	display: inline-block;
+   padding: 20px;
+   margin-top: 0 10px;
+}
+nav ul li a{
+	position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color:white;
+}
+.logoimage{
+	display: inline-block;
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-right: 5px;
+	line-height: 30px;
+}
+@media screen and (max-width:1200px) {
+ nav{
+   display: none;
+ }
+ .logoimage{
+  margin-left: 40%;
+}
+.border{
+    margin-left: 0;
+  }
+}
+/* --------------------------------------------- end of navigation bar  ---------------------------------------*/
+

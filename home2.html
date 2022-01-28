@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="icon"  href="images/logoimage.png" >
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet" href="main.css">
+
+
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Orelega+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Permanent+Marker&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lobster&family=Permanent+Marker&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+</style>
+<style>
+	
+html{
+	scroll-behavior:smooth;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+	background: black;
+
+}
+
+
+
+
+/* styling of home section  */
+.homesection{
+    background: #fede00;
+	
+	
+    width: 100%;
+    height: 900px;
+    box-sizing: border-box;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 90px;
+
+}
+.border{
+
+	margin-left: 330px;
+ 	 margin-top: 20px;
+	border: 22px solid black;
+	height: 400px;
+	width: 700px;
+	position: absolute;
+	border-radius: 20px; 
+  box-shadow: 0px -1px 7px 2px #eee;
+
+}
+.slider{
+  width: 100%;
+  height: 100%;
+  
+
+  overflow: hidden;
+ 
+}
+
+.slides{
+  width: 500%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 700px;
+  height: 400px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 700px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: -80%;
+}
+
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 700px;
+  justify-content: center;
+  margin-top: 360px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+#radio4:checked ~ .navigation-auto .auto-btn5{
+  background: #40D3DC;
+}
+
+
+
+/* ending of home section */
+
+
+
+
+
+.background{
+	height: 490px;
+	width: 100%;
+	background:#fede00;
+	overflow: hidden;
+	
+	position: absolute;
+	margin-top: 180px;
+}
+.background  img{
+	height:100%;
+	width: 1500px;
+	position: absolute;
+	padding-right: 0;
+	
+}
+.background .birds{
+	display: inline-block;
+	margin-left: 60px;
+	height: 80px;
+	width: 80px;
+}
+.background .bird1{
+	display: inline-block;
+	margin-left: 130px;
+	height: 80px;
+	width: 80px;
+}
+.background .bird{
+	display: inline-block;
+	margin-left: 100px;
+	margin-top: 50px;
+	height: 90px;
+	width: 90px;
+}
+.background .bird2{
+	display: inline-block;
+	margin-left: 83%;
+	
+	height: 90px;
+	width: 90px;
+}
+.background .bird3{
+	display: inline-block;
+	margin-left: 88%;
+	
+	margin-top: -10px;
+	height: 80px;
+	width: 80px;
+}
+.ninja .ninja{
+	display: inline-block;
+	position: absolute;
+	margin-left: 68%;
+	margin-top: 280px;
+	height: 270px;
+	width: 270px;
+}
+.ninja .ninjaleft{
+	display: inline-block;
+	position: absolute;
+	margin-left: 15%;
+	margin-top: 235px;
+	height: 270px;
+	width: 270px;
+}
+.background .bird3:hover{
+	transform: scale(0.5);
+
+}
+.writehere{
+	margin-top: 50px;
+  padding-top: 40px;
+	margin-left: 280px;
+	height: 200px;
+	
+	width: 840px;
+	
+}
+.images{
+  height: 100px;
+  width: 100px;
+  margin-left:43% ;
+}
+.ribbon{
+  position: absolute;
+  height: 40px;
+  width:372px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.writehere h1{
+	
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 5px;
+
+}
+
+.writehere h3{
+	text-align: center;
+  margin-top: -5px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 25px;
+	
+}
+.writehere .slogan{
+  font-size: 42px;
+  font-weight: 100;
+  z-index: 1;
+  font-family: 'Permanent Marker', cursive;
+}
+
+
+
+.learningtree{
+ 
+  width: 100%;
+  background: #f7f5f4; /* image bhi daal sakte hai*/
+  overflow: hidden;
+  padding-top: 20px;
+  
+}
+
+.learningtree h1{
+  text-align: center;
+  float: left;
+  word-spacing: 60px;
+  font-family: 'Indie Flower', cursive;
+  margin-left: 38%;
+  font-weight: bold;
+  font-size: 60px;
+}
+.tree{
+  position: absolute;
+  height: 70px;
+  margin-left: -11%;
+  margin-top: 29px;
+  width: 70px;
+}
+.learn{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: none;
+    margin-top: -50px;
+    
+}
+.grid{
+  margin: 80px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 90px;
+  align-items: center;
+}
+
+
+
+.grid >article{
+  background-color: #fff5ff;
+  border: none;
+  display:inline-box;
+  box-shadow: -11px 6px 15px 0px rgb(0 0 0 / 30%);
+  border-radius: 20px;
+  text-align: center;
+  box-sizing:border-box;
+  width: 270px;
+  height: 400px;
+  transition: transform .3s;
+}
+.grid > article img{
+  width: 90%;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.grid >article .csslogo{
+  width: 70%;
+}
+.grid >article:hover{
+  transform: translateY(5px);
+}
+.grid .heading{
+  padding: 0 20xp 20px;
+
+}
+.heading h2{
+  text-transform:uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  
+
+}
+.heading button{
+  background: #615d5d;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.contents{
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+	background: url(images/blackcover.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+.csscontents{
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+	background:url(images/whitegradient.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+.manpointing{
+	height: 700px;
+	width: 700px;
+	margin-top: 40px;
+	margin-left: 100px;
+	position: absolute;
+
+}
+.htmlsection{
+	float: right;
+	margin-right:220px ;
+	height: 500px;
+	width: 400px;
+	border-radius: 10px;
+  
+	margin-top: 90px;
+	background: white;
+  transition: 3s;
+}
+
+.htmlsection img{
+  height: 180px;
+  width: 180px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: -2px;
+  margin-left: 25%;
+
+}
+
+.htmlsection h3{
+  
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -5px;
+  margin-left: 35%;
+  
+}
+.htmlsection p{
+  margin-left: 30px;
+  font-size: 21px;
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: bold;
+  font-weight: 500;
+  margin-right: 30px;
+  margin-top: -5px;
+}
+
+.htmlsection button{
+  background: rgb(24, 20, 20);
+}
+.htmlsection button {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  margin-left: 33%;
+  cursor: pointer;
+  display: block;
+}
+
+.htmlsection button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.hacathon{
+
+width: 100%;
+background: #fede00;
+margin: 0;
+padding-bottom: 110px;
+}
+
+.hacathon .h1{
+  font-size: 55px;
+  margin-left: 30px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.hacathon img{
+  height: 100px;
+  width: 600px;
+  
+}
+.hacathon .blackboard{
+  float: right;
+  height: 500px;
+  margin-top: 40px;
+  width:700px
+}
+.hacathon p{
+  margin-left: 30px;
+  font-size: 25px;
+}
+.btn-grad {
+            margin-top: 10px;
+            padding: 18px 48px;
+            text-align: center;
+            background: black;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            font-size: 15px;
+            border-radius: 10px;
+            display: block;
+            margin-left: 30px;
+          }
+
+.csssection{
+	float: left;
+	margin-left: 220px;
+	height: 500px;
+	width:400px ;
+  color: white;
+	border-radius: 10px;
+	margin-top: 80px;
+	background: black;
+
+}
+.csssection img{
+  height: 180px;
+  width: 180px;
+  margin-left: 25%;
+  
+}
+.csssection h3{
+  
+  font-weight: bold;
+  font-size: 33px;
+  margin-top: -5px;
+  margin-left: 39%;
+  
+}
+.csssection p{
+  margin-left: 30px;
+  font-weight: 500;
+  
+  margin-right: 30px;
+  font-size: 21px;
+  font-family: 'ABeeZee', sans-serif;
+  
+}
+
+
+.csssection button {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  background:black;
+  border-color: white;
+  background-size: cover;
+  color: white;            
+  margin-left: 33%;
+  cursor: pointer;
+  display: block;
+}
+
+.manpointingcss{
+	height: 700px;
+	width: 700px;
+	margin-top: 40px;
+	margin-left: -150px;
+	position: absolute;
+}
+
+.whyalpha{
+ padding-bottom: 100px;
+ padding-top: 10px;
+  width: 100%;
+  background: #f7f5f4;
+  margin-top: -40px;
+}
+.whyalpha h1{
+  text-align: center;
+  font-size: 55px;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+ 
+}
+
+.formcontainer{
+  width: 100%;
+  height: 650px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background: #fede00;
+
+}
+.formcontainer h2{
+  margin-left: 87px;
+  font-size: 43px;
+ 
+  font-family: 'Comfortaa', cursive;
+}
+.form{
+  max-width: 500px;
+  width: 80%;
+  margin-left: 50%;
+  
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  background:black;
+	color:white;	
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.form .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.form .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: white;
+}
+
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background:black;
+   border:2px solid white;
+ }
+}
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .form form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .form .content .category{
+    flex-direction: column;
+  }
+}
+.formcontainer img{
+  position: absolute;
+  height: 500px;
+  margin-left: 40px;
+  
+  width: 500px;
+}
+
+.htmlrow2{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: none;
+    margin-top: 20px;
+}
+.box2{
+    display:inline-box;
+	position:relative;
+	width:290px;
+	
+	height: 350px;
+	background:#f7f5f4;
+	padding:10px;
+	border-radius:10px;
+	margin:20px;
+	box-sizing:border-box;
+	text-align:center;
+	overflow:hidden;
+  transition: 0.5s;
+
+
+
+}
+
+.box2{
+	cursor:pointer;
+}
+
+.icons{
+  position:relative;
+	width:150px;
+	height: 150px;
+	color:black;
+	background: white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:0 auto;
+	border-radius:50%;
+	font-size:50px;
+	font-weight:500;
+	transition:1s;
+  overflow: hidden;
+}
+         
+.icons .hat{
+  height: 130px;
+  width: 130px;
+}
+
+.introhtml2{
+	position:relative;
+	z-index:1;
+    
+	transition:0.5s;
+}
+.introhtml2 h3{
+
+  color: rgb(43, 42, 42);
+
+}
+.introhtml2 p{
+  color: rgb(117, 114, 114);
+}
+.hack{
+  width: 100%;
+  padding-top:30px;
+  padding-bottom: 40px;
+  background: white;
+  display: inline-block;
+
+}
+.hack .hacks{
+  float: left;
+  width: 40%;
+  margin-left: 30px;
+
+}
+.hacks  h1{
+  font-size: 40px;
+  margin-left: 10px;
+  font-family: 'Press Start 2P', cursive;
+}
+.hacks h2{
+  font-size: 20px;
+  color: #0c7077;
+  margin-left: 10px;
+  
+}
+.hacks h3{
+  font-size: 30px;
+  margin-left: 10px
+  
+}
+.hackimg{
+  height: 450px;
+  width: 57.5%;
+}
+.enroll{
+  background: black;
+  text-align: center;
+  padding: 17px 55px;
+  text-transform: uppercase;
+  color: white;
+  
+  border-radius: 10px;
+ 
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.enroll a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+         
+</style>
+</head>
+<body>
+	<!-------------------------------------- staring of navigation bar ----------------------------------->
+    <header>
+		<img class="logoimage" src="logoimage.png">
+        <a href="#" id="logo">Mission Alpha</a>
+        <div class="topics">
+            <nav>
+                <ul>
+                    <li><a href="#homesection">HOME</a></li>
+                    <li><a href="#text">ABOUT</a></li>
+                    <li><a href="#contents">HTML</a></li>
+                    <li><a href="#csscontents">CSS</a></li>
+					          <li><a href="code2.html" target="_blank">ALPHA EDITOR</a></li>
+                    <li><a href="#formcontainer">SCHOLARSHIP</a></li>
+                    
+					
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+	<!-------------------------------------- ending of navigation bar ----------------------------------->
+
+
+	<!-------------------------------------- staring of home section ---------------------------------->
+<div class="homesection" id="homesection">
+
+	<div class="writehere" >
+    <img src="images/blackribbon.png" alt="" class="ribbon">
+    <h1 class="slogan"> "Quality education at your finger tips"</h1>
+    
+		<h3>At Mission Alpha we believe that the
+      access to the best quality education is should be accessible to all
+    </h3>
+	
+
+	</div>
+	<!------------------------------------------ background of image slider  --------------------------------->
+	<div class="background">
+		<img src="images/birds.png" class="birds">
+		
+		<img src="images/birds.png" class="bird">
+		<img src="images/birds.png" class="bird1">
+		<img src="images/bird2.png" class="bird2">
+		<img src="images/bird2.png" class="bird3">
+		
+		<img src="images/conference_mountains (1).png">
+		
+	</div>
+	<!-----------------------------------------  background of image slider  --------------------------------->
+	
+	<!-----------------------------------------   image slider border ------------------------->
+	<div class="border">
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <input type="radio" name="radio-btn" id="radio5">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="images/web.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/tab pic2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/man.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/kid.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/slider 5.jpg" alt="">
+          </div>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+	</div>
+
+	<!-----------------------------------------  ending of image slider border ------------------------------------------->
+
+	<!----------------------------------------- div of images ------------------------------------------------------------->
+	<div class="ninja">
+		<img src="images/ninja-left.webp" class="ninjaleft">
+		<img src="images/ninja-right.webp" class="ninja">
+	</div>
+	
+	<!----------------------------------------- ending div of images ------------------------------------------------------------->	
+	</div>
+    <!-------------------------------------- ending of home section ---------------------------------->
+    <div class="learningtree">
+      <h1>Learning    ree</h1>
+      <img src="images/tree.png" class="tree" alt="">
+      <div class="learn">
+        <main class="grid">
+          <article>
+            <img src="images/htmllogo.png" class="csslogo">
+            <div class="heading">
+              <h2>HTML</h2>
+              <p>
+                html stands for hyper text markup language 
+                html stands for hyper text markup language
+                
+              </p>
+              <button onclick="html()">HTML</button>
+            </div>
+          </article>
+        
+          <article>
+            <img src="images/css logo.png" class="csslogo">
+            <div class="heading">
+              <h2>CSS</h2>
+              <p>
+                CSS, is a simple design language intended to simplify the process of making web pages presentable.
+                 
+                
+              </p>
+              <button onclick="css()">CSS</button>
+            </div>
+          </article>
+          
+          <article>
+            <img src="images/react.png">
+            <div class="heading">
+              <h2>REACT</h2>
+              <p>
+                <h2>
+                  comming<br>
+                  Soon
+                </h2>
+                
+              </p>
+              <button>comming soon</button>
+              
+            </div>
+          </article>
+
+        </main>
+        
+      </div>
+
+      
+      </div>
+
+    
+<!------------------------------------------ starting of html contents -------------------------------->
+
+<div class="contents" id="contents">
+	
+	<img src="images/manpointing.png" alt="" class="manpointing">
+	<div class="htmlsection" data-aos="fade-up-left" data-aos-duration="1200">
+      <img src="images/html logo.png" alt="" >
+        <h3>HTML</h3>
+      <p>
+        HTML (HyperText Markup Language) is a primary markup language for creating websites. 
+        It consists of a series of codes used to structure texts, images, 
+        and other content to be displayed in the browser.
+      </p>
+      <button onclick="html()">Start</button>
+
+	</div>
+
+</div>
+
+<!------------------------------------------  ending of html contents -------------------------------->
+<div class="hacathon">
+  
+  <div data-aos="zoom-in-left" data-aos-duration="1200"><img src="images/men.png" alt="" class="blackboard"></div>
+  <br>
+  <h1 class="h1">Guidence In Web Development </h1>
+  <p>
+    Software undergoes beta testing<br> shortly before iy' released.Beta is latin for <br> "still doesn't work"
+  </p>
+  <button class="btn-grad" onclick="carrier()">Click Here</button>
+  
+</div>
+
+<!------------------------------------------- starting of css contents --------------------------------->
+<div class="csscontents" id="csscontents">
+	
+	<div class="csssection" data-aos="fade-up-right" data-aos-duration="1200" >
+    <img src="images/css logo.png" alt="">
+    <h3>CSS</h3>
+    <p>
+      CSS stands for Cascading Style Sheets CSS describes 
+      how HTML elements are to be displayed on screen, paper,
+       or in other media CSS saves a lot of work. It can control the
+        layout of multiple web pages all at once
+
+    </p>
+    <button onclick="css()">Start</button>
+
+	</div>
+	<img src="images/manpointingright.png"  class="manpointingcss">
+</div>
+
+<!------------------------------------------- ending of css contents -------------------------------------->
+<div class="formcontainer" id="formcontainer">
+  <h2>Get Your Scholarship</h2>
+  <img src="images/scholarshipsclear_0.png" alt="" >
+  <div class="form " data-aos="zoom-in-left" data-aos-duration="1200">
+    <div class="title">Get Scholarship</div>
+    <div class="content">
+      <form onsubmit="myFunction()" id="form" action="#"> 
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text"  placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Last name</span>
+            <input type="text"  placeholder="Last name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text"  placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text"  placeholder="Enter your number" pattern="[0-9]{10}" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Marks</span>
+            <input type="text"  placeholder="Marks in 10th" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Marks</span>
+            <input type="text"  placeholder="Marks in 12th" required>
+          </div>
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Apply"  >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="whyalpha">
+<h1>Why Mission Alpha works ?</h1>
+
+<div class="htmlrow2">
+  <div class="box2">
+      <div class="icons"><img src="images/whyalpha2.png" alt="" class="hat"></div>
+      <div class="introhtml2">
+      <h3>Personalized learning</h3>
+      <p>
+        Students practice at their own pace, first filling
+         in gaps in their understanding and then accelerating 
+         their learning.
+
+      </p>
+      
+  </div>
+  </div>
+  <div class="box2">
+    <div class="icons"><img src="images/whyalpha3.png" class="hat"></div>
+    <div class="introhtml2">
+    <h3>Trusted content</h3>
+    <p>
+      
+      Created by experts, Mission Alpha's library of trusted,
+       standards-aligned practice and lessons which covers all the 
+       in-depth concepts and will make your basics real strong.
+    </p>
+    
+</div>
+  </div>
+  <div class="box2">
+    <div class="icons"><img src="images/whyalpha1.png" class="hat"></div>
+    <div class="introhtml2">
+   <h3>Growth in your Knowledge</h3>
+    <p>
+      
+     At Mission Alpha, we believe that the more you learn 
+     ,the more you grow and with us you can Witness your Growth. 
+    </p>
+    
+</div>
+  </div>
+</div>
+
+
+</div>
+
+<div class="hack">
+  <img src="images/hackathonlogo.jpeg" class="hackimg" >
+<div class="hacks"> 
+  <h1>HACKTHONS</h1>
+<div  data-aos="zoom-in-up" data-aos-duration="1200" >
+  <h2>
+    Don't think of it as asking you
+    to work all weekend
+    for nothinng but free pizza 
+    it's a "Hacathon"
+  </h2>
+  <h3>
+    Amazing goodies will be provided
+    <br>
+    <br>
+  
+  </h3>
+
+</div>
+<h3> Hurry up!!</h3>
+<button class="enroll"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeO-89fyu35hwg4a0tofuDjIwO6IQJWIePJyGLqeRSc7DJBUg/viewform?usp=sf_link" target="_blank">Enroll Now</a></button>
+</div>
+
+</div>
+<!------------------------------------------- starting of about section ----------------------------------->
+
+<div class="aboutsection" id="aboutsection">
+	
+	<div class="image">
+		
+
+	</div>
+	
+	<img src="images/youth.webp" class="youth">
+  <div class="chatbox"> 
+    <h2> Let's Chat</h2>
+    <p>
+      if you have any doubt
+      regarding html and css 
+      please contacts us.
+
+    </p>
+
+    <div class="h3"><h3><a href="contactus.html" target="_blank">contact us</a></h3></div>
+  </div>
+ 
+  <h1 class="ourteam">Core Members</h1>
+	<div class="container1" id="container1">
+        <div class="container">
+            <div class="card">
+                <div class="img">
+                    <img src="images/vinay1.jpg"></div>
+                <div class="content">
+                    <h2> Vinay Pal</h2>
+                    <p> Founder Mission Alpha
+                        Developer 
+                       
+
+                    </p>
+                    <div class="social-media">
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="images/mansagar.jpeg">
+                </div>
+                <div class="content">
+                    <h2>Mansagar Suri</h2>
+                    <p> 
+                     Founder Mission Alpha
+                      Developer
+
+                      <div class="social-media">
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                 
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="images/Rahul2.jpg">
+                </div>
+                <div class="content">
+                    <h2> Rahul Kumar</h2>
+                    <p> 
+                        co-Founder Mission Alpha
+                         Developer
+
+                        
+                    </p>
+                    <div class="social-media">
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text" id="text">
+        <h2>About Us</h2>
+        <p>
+          Mission Alpha is one of India's largest ed-tech startup company. 
+          Launched in 2021,At Mission Alpha we offer highly personalised and effective learning programs for students. 
+          Mission Alpha has become one of the most preferred education platforms across the globe.
+        </p>
+        <br>
+        <h2>What Makes Us Different?</h2>
+        <p>
+          <h3>Personalised Learning</h3>
+            Our niche is creating personalised learning experiences for every type of learner. 
+            The Mission Alpha's way of learning provides students a learning platform where they can learn, 
+            engage and be excited about charting their own path to discover the world. 
+        </p>
+        <h1>Opportunities at Mission Alpha-</h1>
+        <p>
+      At Mission Alpha we believe that in this fast pacing digital world everyone should be provided quality digital education.
+    <br> Scholorship to bright students will also be provided grow their horizon in learning.
+      <br>Hackthlons at weekly intervals.
+     <br>Free courier Guidance.
+
+        </p>
+        <h2>Why Choose Us?</h2>
+        <p>
+          Learning is pivotal for a student's success in academics and life. The Digital Age is 
+          deeply shaping the way students learn and will also determine their future prospects. 
+          At Mission Alpha's, we encourage students to embrace this fast, changing world and making them 
+          ready for tomorrow by being their constant learning partner.</p>
+
+          <br>
+          <br>
+        <p>
+          We craft learning journeys for every student that address their unique needs. We believe in the power 
+          of one-to-one learning that addresses every child's learning needs, allows students to be holistically involved 
+          in their education and be active, lifelong learners.
+
+        </p>
+        
+
+    </div>
+    <hr>
+    <div class="nav">
+      <a href="#homesection" target="_blank"><h3>HOME</h3></a>
+      <a href="#text"><h3>ABOUT</h3></a>
+      <a href="html.html" target="_blank"><h3>HTML</h3></a>
+      <a href="css contents.html" target="_blank"><h3>CSS</h3></a>
+      <a href="code2.html" target="_blank"><h3>CODE EDITOR</h3></a>
+      <a href="login2.html" target="_blank"><h3>LOGIN</h3></a>
+    </div>
+    <div class="logo">
+      <img src="images/logo2.png" alt="">
+    </div>
+    <div class="logoicon" onclick="fun()"></div>
+    <div class="logoicon2"></div>
+    <div class="logoicon3"></div>
+    <div class="logoicon4"></div>
+    
+     <div class="missionintro">
+      
+      <p>
+        <h3>ADDRESS:</h3>
+        Chitkara university HP campus<br>
+        baddi solan.      
+      </p>
+      <h3>CUSTOMER SERVICE:</h3>
+      <p>
+        706875-9767
+      </p>
+      <h3>EMAIL:</h3>
+      <p>
+        hello@missionalpha.com
+      </p>
+      <h3>doubt resolve</h3>
+      <p>Monday, Tuesday, Wednesday, Thursday,Friday,Saturday,Sunday 9.00 am -5.00 pm</p>
+     </div>
+
+</div>
+
+<!------------------------------------------- ending of about section ----------------------------------->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 5){
+        counter = 1;
+      }
+    }, 5000);
+	AOS.init();  
+
+	function html(){
+	window.location="html.html" ;
+	}
+	function css(){
+	window.location="css contents.html";
+	}
+  function sucess(){
+            alert("form submit sucessfully");
+            }
+
+  function myFunction() {
+  alert("The form is submitted");
+  document.getElementById("form").reset();
+}
+  function carrier(){
+    window.open("carrier guidance.html");
+  }
+  function fun(){
+    
+  }
+
+
+</script>
+	
+</body>
+</html>
